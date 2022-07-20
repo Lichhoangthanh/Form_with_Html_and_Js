@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form 1</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Hoang Thanh Lich database"/>
+        <script src = "WD_1.js"></script>
+    </head>
+    <body>
+        <h1><strong>Enter information</strong></h1>
+        <h2><em>Hello</em></h2>
+
+        <form id = "registerForm" method="post" action = "Confirm.html">
+            <fieldset>
+                <legend>Personal information</legend>
+                
+                <P><label for = "first_name">Enter your First name!</label>
+                <input type = "text" id="first_name" name="First_name"></P>
+
+                <p><label for = "last_name">Enter your Last name!</label>
+                <input type = "text" id="last_name" name="Last_name"></p>
+
+                <p><label for = "email">Enter your Email!</label>
+                <input type = "text" id="email" name="Email"></p>
+
+                <p><label for = "phone_number">Enter your Phone number!</label>
+                <input type = "text" id="phone_number" name="Phone_number"></p>
+
+            </fieldset>
+
+            <hr />
+            <fieldset>
+                <legend>Select your occupation</legend>
+
+                <label for = "university">University</label>
+                <input type="radio" name ="occupation" id = "university" value="University"><br />
+
+                <label for = "working">Working</label>
+                <input type="radio" name ="occupation" id = "working" value="Working"><br />
+
+                <label for = "retired">Retired</label>
+                <input type="radio" name ="occupation" id = "retired" value="Retired"><br />
+
+            </fieldset>
+
+            <hr />
+            <fieldset>
+                <legend>Select your lane</legend>
+
+                <label for = "top">Top</label>
+                <input type="checkbox" name = "top" id = "top" value="Lane"><br />
+
+                <label for = "jungle">Jungle</label>
+                <input type="checkbox" name = "jungle" id = "jungle" value="Lane"><br />
+
+                <label for = "mid">Mid</label>
+                <input type="checkbox" name = "mid" id = "mid" value="Lane"><br />
+
+                <label for = "ad">Ad</label>
+                <input type="checkbox" name = "ad" id = "ad" value="Lane"><br />
+                
+                <label for = "sp">Sp</label>
+                <input type="checkbox" name = "sp" id = "sp" value="Lane"><br />
+            </fieldset>
+
+            <br />
+            <label for = "chair">Choose your chair</label>
+            <select name = "chair" id = "chair">
+                <option value = "none">Please select your chair</option>
+                <option value = "gaming">Gaming</option>
+                <option value = "normal">normal</option>
+            </select>
+
+            <br />
+            <br />
+            <input type = "submit" value="Next"/>
+        </form>
+    </body>
+</html>
